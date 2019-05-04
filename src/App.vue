@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-link to="/">Go to Feed</router-link>
+    <router-link to="/list">Go to List</router-link>
+    <router-link to="/post">Go to Post</router-link>
+    <!-- <router-link v-bind:to="{ name : 'post', params : { id: 1 }}">Go to Post</router-link> -->
+    <router-view></router-view>
+    <!-- <router-view/> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'app',
-  components: {
-    HelloWorld
+  data() {
+
   }
 }
 </script>

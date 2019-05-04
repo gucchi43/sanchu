@@ -1,8 +1,13 @@
+import("firebase/functions");
 import Vue from 'vue'
-import App from './App.vue'
+import App from './App'
+import router from './router'
 
-Vue.config.productionTip = false
+
+
+// firebase.initializeApp(config);
 
 new Vue({
-  render: h => h(App),
+  router, //追加
+  render: h => h(App)
 }).$mount('#app')
